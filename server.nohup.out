@@ -7,41 +7,36 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.4.3)
 
-2021-02-26 10:19:46.281  INFO 66670 --- [           main] .SpringCloudMicroserviceDemo1Application : Starting SpringCloudMicroserviceDemo1Application v1.0.0 using Java 11.0.8 on localhost with PID 66670 (/Users/xuzewei/microprograms/spring-cloud-microservice-demo1/target/spring-cloud-microservice-demo1-1.0.0.jar started by xuzewei in /Users/xuzewei/microprograms/spring-cloud-microservice-demo1)
-2021-02-26 10:19:46.291  INFO 66670 --- [           main] .SpringCloudMicroserviceDemo1Application : No active profile set, falling back to default profiles: default
-2021-02-26 10:19:49.888  INFO 66670 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1107cf17-6cb1-3c1a-a84a-fe04ddcda6f5
-2021-02-26 10:19:50.595  INFO 66670 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-02-26 10:19:50.622  INFO 66670 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-26 10:19:50.624  INFO 66670 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-02-26 10:19:50.760  INFO 66670 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-02-26 10:19:50.760  INFO 66670 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4281 ms
-2021-02-26 10:19:52.003  INFO 66670 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-26 10:19:52.911  INFO 66670 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2021-02-26 10:19:53.064  WARN 66670 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2021-02-26 10:19:53.080  INFO 66670 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
-2021-02-26 10:19:53.153  INFO 66670 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2021-02-26 10:19:53.320  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2021-02-26 10:19:53.337  INFO 66670 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-02-26 10:19:53.399  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2021-02-26 10:19:53.399  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2021-02-26 10:19:53.399  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2021-02-26 10:19:53.399  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2021-02-26 10:19:53.400  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2021-02-26 10:19:53.400  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2021-02-26 10:19:53.400  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2021-02-26 10:19:53.877  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2021-02-26 10:19:53.882  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2021-02-26 10:19:53.886  INFO 66670 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2021-02-26 10:19:53.895  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614305993894 with initial instances count: 1
-2021-02-26 10:19:53.897  INFO 66670 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRING-CLOUD-MICROSERVICE-DEMO1 with eureka with status UP
-2021-02-26 10:19:53.898  INFO 66670 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1614305993898, current=UP, previous=STARTING]
-2021-02-26 10:19:53.901  INFO 66670 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.187:spring-cloud-microservice-demo1: registering service...
-2021-02-26 10:19:53.959  INFO 66670 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-02-26 10:19:53.960  INFO 66670 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
-2021-02-26 10:19:54.002  INFO 66670 --- [           main] .SpringCloudMicroserviceDemo1Application : Started SpringCloudMicroserviceDemo1Application in 10.072 seconds (JVM running for 11.667)
-2021-02-26 10:19:54.398  INFO 66670 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.187:spring-cloud-microservice-demo1 - registration status: 204
-2021-02-26 10:21:51.176  INFO 66670 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-26 10:21:51.178  INFO 66670 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-02-26 10:21:51.182  INFO 66670 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2021-02-26 10:24:53.413  INFO 66670 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2021-02-26 10:29:53.425  INFO 66670 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-02-26 11:51:27.143  INFO 69682 --- [           main] .SpringCloudMicroserviceDemo1Application : Starting SpringCloudMicroserviceDemo1Application v1.0.0 using Java 11.0.8 on localhost with PID 69682 (/Users/xuzewei/microprograms/spring-cloud-microservice-demo1/target/spring-cloud-microservice-demo1-1.0.0.jar started by xuzewei in /Users/xuzewei/microprograms/spring-cloud-microservice-demo1)
+2021-02-26 11:51:27.175  INFO 69682 --- [           main] .SpringCloudMicroserviceDemo1Application : No active profile set, falling back to default profiles: default
+2021-02-26 11:51:29.942  INFO 69682 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1107cf17-6cb1-3c1a-a84a-fe04ddcda6f5
+2021-02-26 11:51:30.619  INFO 69682 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-26 11:51:30.638  INFO 69682 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-26 11:51:30.639  INFO 69682 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-02-26 11:51:30.752  INFO 69682 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-26 11:51:30.753  INFO 69682 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3399 ms
+2021-02-26 11:51:31.927  INFO 69682 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-26 11:51:32.882  INFO 69682 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-02-26 11:51:33.056  WARN 69682 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-02-26 11:51:33.075  INFO 69682 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2021-02-26 11:51:33.152  INFO 69682 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-02-26 11:51:33.344  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-02-26 11:51:33.360  INFO 69682 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-02-26 11:51:33.407  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-02-26 11:51:33.407  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-02-26 11:51:33.407  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-02-26 11:51:33.407  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-02-26 11:51:33.407  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-02-26 11:51:33.407  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-02-26 11:51:33.407  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-02-26 11:51:33.885  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-02-26 11:51:33.889  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-02-26 11:51:33.894  INFO 69682 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-02-26 11:51:33.903  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614311493902 with initial instances count: 2
+2021-02-26 11:51:33.906  INFO 69682 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRING-CLOUD-MICROSERVICE-DEMO1 with eureka with status UP
+2021-02-26 11:51:33.906  INFO 69682 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1614311493906, current=UP, previous=STARTING]
+2021-02-26 11:51:33.910  INFO 69682 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.187:spring-cloud-microservice-demo1:8080: registering service...
+2021-02-26 11:51:34.013  INFO 69682 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-26 11:51:34.022  INFO 69682 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2021-02-26 11:51:34.073  INFO 69682 --- [           main] .SpringCloudMicroserviceDemo1Application : Started SpringCloudMicroserviceDemo1Application in 8.118 seconds (JVM running for 9.269)
+2021-02-26 11:51:34.095  INFO 69682 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.187:spring-cloud-microservice-demo1:8080 - registration status: 204

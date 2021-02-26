@@ -1,16 +1,12 @@
 package com.github.microprograms.spring_cloud_microservice_demo1;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
-@RequestMapping("/demo1")
+@RestController
 public class Demo1Controller {
 
-    @GetMapping("/health")
-    @ResponseBody
+    @RequestMapping("/health")
     public String health() {
         return "Ok";
     }
