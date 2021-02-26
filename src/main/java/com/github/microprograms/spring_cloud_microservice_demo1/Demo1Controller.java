@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Demo1Controller {
 
-    @RequestMapping("/health")
+    @RequestMapping(value = "/health", produces = "text/plain;charset=UTF-8")
     public String health() {
-        return "Ok";
+        return "Ok!";
     }
 
 }
