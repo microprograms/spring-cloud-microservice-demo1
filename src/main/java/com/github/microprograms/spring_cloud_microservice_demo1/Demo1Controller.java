@@ -1,12 +1,12 @@
 package com.github.microprograms.spring_cloud_microservice_demo1;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Demo1Controller {
 
-    @RequestMapping(value = "/health", produces = "text/plain;charset=UTF-8")
+    @GetMapping(value = "/health", produces = "application/json")
     public String health() {
         return "Ok!";
     }
