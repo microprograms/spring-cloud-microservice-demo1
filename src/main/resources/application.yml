@@ -8,17 +8,15 @@ spring:
 
 eureka:
   client:
-    # 是否要注册到其他Eureka Server实例
-    register-with-eureka: true
-    # 是否要从其他Eureka Server实例获取数据
-    fetch-registry: true
     service-url:
-      # 指定eureka server通信地址，注意/eureka/小尾巴不能少
       # defaultZone: http://eureka:password@localhost:8761/eureka/
       defaultZone: http://localhost:8761/eureka/
-  # instance:
-  # 是否注册IP到eureka server，如不指定或设为false，那就会注册主机名到eureka server
-  # prefer-ip-address: true
+  instance:
+    # 是否注册IP到eureka server，如不指定或设为false，那就会注册主机名到eureka server
+    prefer-ip-address: true
+    # 重要！如果不指定IP，虽然能注册成功，但是无法通过“服务名”调用！
+    ip-address: 127.0.0.1
+    # hostname: localhost
 
 management:
   endpoint:

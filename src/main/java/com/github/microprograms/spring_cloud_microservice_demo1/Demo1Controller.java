@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Demo1Controller {
 
-    @GetMapping(value = "/health", produces = "application/json")
+    @GetMapping("/health")
     public String health() {
         return "Ok!";
     }
