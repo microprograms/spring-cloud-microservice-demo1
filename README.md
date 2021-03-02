@@ -1,7 +1,14 @@
 # Spring Cloud 微服务 Demo1
 
+
 - `默认端口：` 随机（1024 ~ 9999）
 - `依赖：` [Eureka 注册中心](https://github.com/microprograms/spring-cloud-starter-netflix-eureka-server-security-demo)
+
+
+#### 版本依赖
+- `Jdk` 1.8 及以上
+- `Spring Boot` 2.3.9.RELEASE
+- `Spring Cloud` Hoxton.SR10
 
 #### 编译打包
 
