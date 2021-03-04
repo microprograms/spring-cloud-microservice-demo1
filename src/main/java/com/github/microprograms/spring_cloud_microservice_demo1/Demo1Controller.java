@@ -18,7 +18,7 @@ public class Demo1Controller {
         if (new Random().nextBoolean()) {
             Thread.sleep(5 * 1000);
         }
-        return environment.getProperty("local.server.port") + " is Ok!";
+        return environment.getProperty("hostname") + " is Ok!";
     }
 
 }
